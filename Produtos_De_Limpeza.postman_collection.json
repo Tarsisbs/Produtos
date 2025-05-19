@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "8acd9a45-ee25-4e3a-ba00-f5ac626d4bea",
+		"name": "Produtos_De_Limpeza",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "45097824"
+	},
+	"item": [
+		{
+			"name": "testeAplicação",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/empresa_produtos_limpeza/v1"
+			},
+			"response": []
+		},
+		{
+			"name": "testeCliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/empresa_produtos_limpeza/v1/cliente"
+			},
+			"response": []
+		},
+		{
+			"name": "testeProdutos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/empresa_produtos_limpeza/v1/produtos"
+			},
+			"response": []
+		},
+		{
+			"name": "testePedidos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/empresa_produtos_limpeza/v1/pedidos"
+			},
+			"response": []
+		},
+		{
+			"name": "testeItemPedido",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/empresa_produtos_limpeza/v1/itempedido"
+			},
+			"response": []
+		},
+		{
+			"name": "testeEndereço",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/empresa_produtos_limpeza/v1/endereco"
+			},
+			"response": []
+		},
+		{
+			"name": "testeCategoria",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/empresa_produtos_limpeza/v1/categoria"
+			},
+			"response": []
+		},
+		{
+			"name": "testeStatus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/empresa_produtos_limpeza/v1/status"
+			},
+			"response": []
+		}
+	]
+}
