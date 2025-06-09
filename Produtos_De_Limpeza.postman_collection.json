@@ -1,82 +1,302 @@
 {
 	"info": {
-		"_postman_id": "8acd9a45-ee25-4e3a-ba00-f5ac626d4bea",
+		"_postman_id": "83eee17c-a2c8-4396-84a3-2ccd25aaf836",
 		"name": "Produtos_De_Limpeza",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
-		"_exporter_id": "45097824"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43176636"
 	},
 	"item": [
 		{
-			"name": "testeAplicação",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "localhost:3000/empresa_produtos_limpeza/v1"
-			},
-			"response": []
+			"name": "GET",
+			"item": [
+				{
+					"name": "testeAplicação",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"empresa_produtos_limpeza",
+								"v1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "testeCliente",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1/cliente",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"empresa_produtos_limpeza",
+								"v1",
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "testeClienteCodigo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1/cliente/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"empresa_produtos_limpeza",
+								"v1",
+								"cliente",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "testeProdutos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1/produtos",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"empresa_produtos_limpeza",
+								"v1",
+								"produtos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "testePedidos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1/pedidos",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"empresa_produtos_limpeza",
+								"v1",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "testeItemPedido",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1/itempedido",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"empresa_produtos_limpeza",
+								"v1",
+								"itempedido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "testeEndereço",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1/endereco",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"empresa_produtos_limpeza",
+								"v1",
+								"endereco"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "testeCategoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1/categoria",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"empresa_produtos_limpeza",
+								"v1",
+								"categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "testeStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1/status",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"empresa_produtos_limpeza",
+								"v1",
+								"status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		},
 		{
-			"name": "testeCliente",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "localhost:3000/empresa_produtos_limpeza/v1/cliente"
-			},
-			"response": []
-		},
-		{
-			"name": "testeProdutos",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "localhost:3000/empresa_produtos_limpeza/v1/produtos"
-			},
-			"response": []
-		},
-		{
-			"name": "testePedidos",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "localhost:3000/empresa_produtos_limpeza/v1/pedidos"
-			},
-			"response": []
-		},
-		{
-			"name": "testeItemPedido",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "localhost:3000/empresa_produtos_limpeza/v1/itempedido"
-			},
-			"response": []
-		},
-		{
-			"name": "testeEndereço",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "localhost:3000/empresa_produtos_limpeza/v1/endereco"
-			},
-			"response": []
-		},
-		{
-			"name": "testeCategoria",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "localhost:3000/empresa_produtos_limpeza/v1/categoria"
-			},
-			"response": []
-		},
-		{
-			"name": "testeStatus",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "localhost:3000/empresa_produtos_limpeza/v1/status"
-			},
-			"response": []
+			"name": "PUT",
+			"item": [
+				{
+					"name": "testeClientePut",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Tarsis\",\r\n    \"telefone\": \"11959316503\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1/cliente/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"empresa_produtos_limpeza",
+								"v1",
+								"cliente",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "testeProdutosPut",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "testePedidosPut",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "testeItemPedidoPut",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "testeEndereçoPut",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "testeCategoriaPut",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "testeStatusPut",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
