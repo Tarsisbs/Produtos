@@ -78,7 +78,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/empresa_produtos_limpeza/v1/cliente/1",
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1/cliente/13",
 							"host": [
 								"localhost"
 							],
@@ -87,7 +87,7 @@
 								"empresa_produtos_limpeza",
 								"v1",
 								"cliente",
-								"1"
+								"13"
 							]
 						}
 					},
@@ -221,11 +221,11 @@
 				{
 					"name": "testeClientePut",
 					"request": {
-						"method": "PUT",
+						"method": "PATCH",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"Tarsis\",\r\n    \"telefone\": \"11959316503\"\r\n}",
+							"raw": "{\r\n    \"codigo\": \"1\",\r\n    \"telefone\": \"11978897506\",\r\n    \"nome\": \"Pedro Marçal Neto Raimundo\",\r\n    \"limite\": \"56897635\",\r\n    \"id_endereco\": \"4\",\r\n    \"id_status\": \"3\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -233,7 +233,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/empresa_produtos_limpeza/v1/cliente/1",
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1/cliente",
 							"host": [
 								"localhost"
 							],
@@ -241,8 +241,7 @@
 							"path": [
 								"empresa_produtos_limpeza",
 								"v1",
-								"cliente",
-								"1"
+								"cliente"
 							]
 						}
 					},
@@ -293,6 +292,160 @@
 					"request": {
 						"method": "PUT",
 						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "testeClienteInsert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": \"13\",\r\n    \"telefone\": \"11978897506\",\r\n    \"nome\": \"Pedro Marçal Neto Raimundo\",\r\n    \"limite\": \"sem limites\",\r\n    \"id_endereco\": \"9\",\r\n    \"id_status\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1/cliente",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"empresa_produtos_limpeza",
+								"v1",
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "testeProdutosInsert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1/produtos",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"empresa_produtos_limpeza",
+								"v1",
+								"produtos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "testePedidosInsert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1/pedidos",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"empresa_produtos_limpeza",
+								"v1",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "testeItemPedidoInsert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1/itempedido",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"empresa_produtos_limpeza",
+								"v1",
+								"itempedido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "testeEndereçoInsert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1/endereco",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"empresa_produtos_limpeza",
+								"v1",
+								"endereco"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "testeCategoriaInsert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1/categoria",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"empresa_produtos_limpeza",
+								"v1",
+								"categoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "testeStatusInsert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/empresa_produtos_limpeza/v1/status",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"empresa_produtos_limpeza",
+								"v1",
+								"status"
+							]
+						}
 					},
 					"response": []
 				}

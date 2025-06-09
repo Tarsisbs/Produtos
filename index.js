@@ -2,6 +2,7 @@ const express = require('express')
 const { buscarClientes } = require('./src/DAO/cliente/buscarClientes.js')
 const { buscarClientesID } = require('./src/DAO/cliente/buscarClientesID.js')
 const { atualizarCliente } = require('./src/DAO/cliente/atualizarClientes.js')
+const { inserirCliente } = require('./src/DAO/cliente/inserirClientes.js')
 const { buscarProdutos } = require('./src/DAO/produtos/buscarProdutos.js')
 const { buscarPedidos } = require('./src/DAO/pedidos/buscarPedidos.js')
 const { buscarCategoria } = require('./src/DAO/categoria/buscarCategoria.js')
@@ -31,7 +32,17 @@ app.get('/empresa_produtos_limpeza/v1/cliente/:codigo', async (req, res) =>{
     res.json(clientes)
 })
 
-app.put('/empresa_produtos_limpeza/v1/cliente/:codigo', async (req, res) =>{
+app.post('/empresa_produtos_limpeza/v1/cliente', async (req, res) =>{
+    const {codigo, telefone, nome, limite, id_endereco, id_status} = req.body
+    try {
+        const clienteinserido = await inserirCliente(codigo, {telefone, nome, limite, id_endereco, id_status})
+        res.json({ msg: `Cliente ${codigo} inserido com sucesso!`})
+    } catch (err) {
+        res.json({ msg: `Erro ao atualizar cliente` })
+    }
+})
+
+app.put('/empresa_produtos_limpeza/v1/cliente', async (req, res) =>{
     const codigo = req.params.codigo
     const dadosAtualizados = req.body
     try {
