@@ -266,7 +266,7 @@ app.delete('/empresa_produtos_limpeza/v1/categoria/:id', async (req, res) => {
     const id = req.params.id
     try {
         await deletarCategoria(id)
-        res.json({ msg: `Categoria ${id} deletado com sucesso!` })
+        res.json({ msg: `Categoria ${id} deletada com sucesso!` })
     } catch (err) {
         res.status(500).json({ msg: `Erro ao deletar categoria` })
     }
