@@ -111,15 +111,10 @@ app.post('/empresa_produtos_limpeza/v1/cliente', async (req, res) =>{
     }
 })
 
-app.delete('/empresa_produtos_limpeza/v1/cliente/:codigo', async (req, res) => {
-    const codigo = req.params.codigo
-    try {
-        await deletarCliente(codigo)
-        res.json({ msg: `Cliente ${codigo} deletado com sucesso!` })
-    } catch (err) {
-        console.error('Erro ao deletar cliente:', err)
-        res.status(500).json({ msg: `Erro ao deletar cliente` })
-    }
+app.delete('/empresa_produtos_limpeza/v1/cliente', async (req, res) => {
+    let { codigo } = req.body
+    let result = await deletarCliente(codigo)
+    res.json(result)
 })
 
 // Produtos
@@ -216,7 +211,7 @@ app.delete('/empresa_produtos_limpeza/v1/pedido/:numero', async (req, res) => {
     const numero = req.params.codigo
     try {
         await deletarPedido(numero)
-        res.json({ msg: `Pedido ${codigo} deletado com sucesso!` })
+        res.json({ msg: `Pedido ${codigo} deletado com sucesso!`, resp })
     } catch (err) {
         res.status(500).json({ msg: `Erro ao deletar pedido` })
     }
